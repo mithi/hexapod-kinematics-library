@@ -1,6 +1,6 @@
 {
     "name": "hexapod-kinematics-library",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Compute hexapod forward and inverse kinematics",
     "source": "src/index.js",
     "main": "dist/index.js",
