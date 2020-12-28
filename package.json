@@ -1,0 +1,29 @@
+{
+    "name": "hexapod-kinematics-library",
+    "version": "0.0.1",
+    "description": "Compute hexapod forward and inverse kinematics",
+    "source": "src/index.js",
+    "main": "dist/index.js",
+    "module": "dist/index.module.js",
+    "unpkg": "dist/index.umd.js",
+    "exports": "./dist/index.modern.js",
+    "scripts": {
+        "build": "microbundle",
+        "dev": "microbundle watch",
+        "test": "jest"
+    },
+    "keywords": [
+        "hexapod",
+        "robot",
+        "inverse-kinematics",
+        "kinematics"
+    ],
+    "author": "Mithi",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "babel-jest": "^26.6.3",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "jest": "^26.6.3",
+        "microbundle": "^0.13.0"
+    }
+}
