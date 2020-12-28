@@ -1,3 +1,9 @@
+[![NPM](https://img.shields.io/npm/v/hexapod-kinematics-library.svg)](https://www.npmjs.com/package/hexapod-kinematics-library)
+[![MINIFIED](https://img.shields.io/bundlephobia/min/hexapod-kinematics-library?color=%2300BCD4&label=minified)](https://bundlephobia.com/result?p=hexapod-kinematics-library)
+[![GZIPPED](https://img.shields.io/bundlephobia/minzip/hexapod-kinematics-library?color=%2300BCD4&label=minified%20%2B%20gzipped)](https://bundlephobia.com/result?p=hexapod-kinematics-library)
+[![Install Size](https://packagephobia.now.sh/badge?p=hexapod-kinematics-library)](https://packagephobia.com/result?p=hexapod-kinematics-library)
+[![buy me coffee](https://img.shields.io/badge/Buy%20me%20-coffee!-orange.svg?logo=buy-me-a-coffee&color=795548)](https://ko-fi.com/minimithi)
+
 # Hexapod Kinematics Library
 
 <p align="center">
