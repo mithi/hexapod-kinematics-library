@@ -1,0 +1,41 @@
+name: main
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    # Set the job key. The key is displayed as the job name
+    # when a job name is not provide
+    main:
+        # Name the job
+        name: Build, check code style, test, upload coverage
+
+        # Set the type of machine to run on
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout a copy of your repository on the ubuntu-latest machine
+              uses: actions/checkout@v2
+
+            - name: Use Node ${{ matrix.node }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node }}
+
+            - name: Install deps and build (with cache)
+              uses: bahmutov/npm-install@v1
+
+            - name: Check code style
+              run: npm run check-format
+
+            - name: Test and generate coverage report
+              run: npm run test --coverage
+
+            - name: Upload coverage to Codecov
+              uses: codecov/codecov-action@v1
+              with:
+                  name: codecov-umbrella
+                  fail_ci_if_error: true
