@@ -8,7 +8,7 @@ that are not handled correctly by the orientSolverSpecific.
 algorithm is available.
 
 ............
-  OVERVIEW
+    OVERVIEW
 ............
 
 Find:
@@ -23,16 +23,16 @@ We have 18 points total.
 
 We have a total of 540 combinations
 - get three legs out of six (20 combinations)
-  - we have three possible points for each leg,
+    - we have three possible points for each leg,
         (coxiaPoint, femurPoint, footTip),
         that's 27 (3^3) combinations
-  -  27 * 20 is 540
+    -  27 * 20 is 540
 
 For each combination:
     1. Check if stable. If not, try the next combination
-      - Check if the projection of the center of gravity to the plane
-        defined by the three points lies inside the triangle,
-        if not stable, try the next combination
+        - Check if the projection of the center of gravity to the plane
+            defined by the three points lies inside the triangle,
+            if not stable, try the next combination
 
     2. Get the HEIGHT and normal of the height and normal of the triangle plane
         (We need this for the next part)
@@ -154,7 +154,7 @@ const getThreePoints = (threeLegs, threeJointIndices) =>
 
 const getTwoLegSets = (threeLegIndices, sixLegs) => {
     const threeLegs = threeLegIndices.map(n => sixLegs[n])
-    const otherThreeLegIndices = [...Array(6).keys()].filter(
+    const otherThreeLegIndices = [0, 1, 2, 3, 4, 5].filter(
         n => !threeLegIndices.includes(n)
     )
     const otherThreeLegs = otherThreeLegIndices.map(n => sixLegs[n])

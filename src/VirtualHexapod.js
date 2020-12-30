@@ -160,6 +160,7 @@ class VirtualHexapod {
         // - new orientation of the body (nAxis)
         // - which legs are on the ground (groundLegsNoGravity)
         // - distance of center of gravity to the ground (height)
+
         const solved = flags.assumeKnownGroundPoints
             ? oSolverSpecific.computeOrientationProperties(legsNoGravity)
             : oSolverGeneral.computeOrientationProperties(legsNoGravity)

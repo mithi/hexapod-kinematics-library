@@ -23,3 +23,7 @@ Docs are written in the files themselves:
 -   [`solveInverseKinematics`](./src/solvers/ik/hexapodSolver.js)
 
 You can also inspect the [test directory](https://github.com/mithi/hexapod-kinematics-library/tree/main/tests) to see examples of how they're used.
+
+## Contributing [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-orange.svg?style=flat)](https://github.com/mithi/mithi/wiki/Contributing)
+
+Please read the [contributing guidelines](https://github.com/mithi/mithi/wiki/Contributing) and the recommended [commit style guide](https://github.com/mithi/mithi/wiki/Commit-style-guide)! Thanks!
