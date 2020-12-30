@@ -88,6 +88,7 @@ const uniformMatrix4x4 = d => {
 }
 
 const add = (a, b) => a + b
+
 const multiply = (a, b) => a * b
 
 const operate4x4 = (matrixA, matrixB, operation) => {
@@ -100,13 +101,9 @@ const operate4x4 = (matrixA, matrixB, operation) => {
     return resultMatrix
 }
 
-const dotMultiply4x4 = (matrixA, matrixB) => {
-    return operate4x4(matrixA, matrixB, multiply)
-}
+const dotMultiply4x4 = (matrixA, matrixB) => operate4x4(matrixA, matrixB, multiply)
 
-const add4x4 = (matrixA, matrixB) => {
-    return operate4x4(matrixA, matrixB, add)
-}
+const add4x4 = (matrixA, matrixB) => operate4x4(matrixA, matrixB, add)
 
 const multiply4x4 = (matrixA, matrixB) => {
     let resultMatrix = uniformMatrix4x4(null)
@@ -126,7 +123,6 @@ const multiply4x4 = (matrixA, matrixB) => {
 
 function tRotXmatrix(theta, tx = 0, ty = 0, tz = 0) {
     const [s, c] = getSinCos(theta)
-
     return [
         [1, 0, 0, tx],
         [0, c, -s, ty],
@@ -174,8 +170,8 @@ const skew = p => [
 const matrixToAlignVectorAtoB = (a, b) => {
     const v = cross(a, b)
     const s = vectorLength(v)
-    // When angle between a and b is zero or 180 degrees
-    // cross product is 0, R = I
+    // When the angle between a and b is zero or 180 degrees
+    // then cross product is 0, R = I
     if (s === 0) {
         return IDENTITY_MATRIX_4x4
     }
