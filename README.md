@@ -14,8 +14,7 @@
     <img src="https://mithi.github.io/robotics-blog/show-off-v2-4.gif" alt="drawing" width="400" />
 </p>
 
-Code you can use to solve forward/inverse kinematics and generate walk sequences of hexapod robots. The codebase is largely copied from [Mithi's Bare Minimum Hexapod Robot Simulator 2](https://github.com/mithi/hexapod). [![Commit snapshot](https://img.shields.io/badge/commit%20snapshot-467d1a3b9-orange.svg?color=purple)](https://github.com/mithi/hexapod/commit/467d1a3b92dabd0304c7ef4675d64179f82efb69)
-
+Code you can use to solve forward/inverse kinematics and generate walk sequences of hexapod robots. The codebase is largely copied from [Mithi's Bare Minimum Hexapod Robot Simulator 2](https://github.com/mithi/hexapod). [![Commit snapshot](https://img.shields.io/badge/commit%20snapshot-467d1a3b9-orange.svg?color=purple)](https://github.com/mithi/hexapod/tree/467d1a3b92dabd0304c7ef4675d64179f82efb69/src/hexapod)
 
 Docs are written in the files themselves:
 
