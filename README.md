@@ -11,10 +11,11 @@
 # Hexapod Kinematics Library
 
 <p align="center">
-    <img src="https://mithi.github.io/robotics-blog/show-off.gif" alt="drawing" width="400" />
+    <img src="https://mithi.github.io/robotics-blog/show-off-v2-4.gif" alt="drawing" width="400" />
 </p>
 
-Code you can use to solve forward and inverse kinematics, generate walk sequences of hexapod robots as copied from [Mithi's Bare Minimum Hexapod Robot Simulator 2](https://github.com/mithi/hexapod): [commit: 467d1a3b9](https://github.com/mithi/hexapod/commit/467d1a3b92dabd0304c7ef4675d64179f82efb69)
+Code you can use to solve forward/inverse kinematics and generate walk sequences of hexapod robots. The codebase is largely copied from [Mithi's Bare Minimum Hexapod Robot Simulator 2](https://github.com/mithi/hexapod). [![Commit snapshot](https://img.shields.io/badge/commit%20snapshot-467d1a3b9-orange.svg?color=purple)](https://github.com/mithi/hexapod/commit/467d1a3b92dabd0304c7ef4675d64179f82efb69)
+
 
 Docs are written in the files themselves:
 
@@ -22,7 +23,7 @@ Docs are written in the files themselves:
 -   [`getWalkSequence`](./src/solvers/walkSequenceSolver.js)
 -   [`solveInverseKinematics`](./src/solvers/ik/hexapodSolver.js)
 
-You can also inspect the [test directory](https://github.com/mithi/hexapod-kinematics-library/tree/main/tests) to see examples of how they're used.
+You can also inspect the [test directory](https://github.com/mithi/hexapod-kinematics-library/tree/main/tests) to see examples of how to use.
 
 ## Contributing [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-orange.svg?style=flat)](https://github.com/mithi/mithi/wiki/Contributing)
 
